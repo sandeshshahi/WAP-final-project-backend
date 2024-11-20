@@ -2,6 +2,9 @@
   "name": "policies_for_the_students-backend",
   "version": "1.0.0",
   "main": "dist/server.js",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "start": "node .",
     "build": "tsc && copyfiles ./database/schema.sql dist",
