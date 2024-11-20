@@ -1,9 +1,11 @@
 {
   "name": "policies_for_the_students-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "tsx watch server.ts"
+    "start": "node .",
+    "build": "tsc && copyfiles ./database/schema.sql dist",
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
     "@types/express": "^5.0.0",
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.9.0",
+    "copyfiles": "^2.4.1",
     "tsx": "^4.19.2"
   },
   "dependencies": {
@@ -23,7 +26,12 @@
     "fs": "^0.0.1-security",
     "morgan": "^1.10.0",
     "mysql2": "^3.11.4",
+    "nodemon": "^3.1.7",
     "path": "^0.12.7",
     "sqlite3": "^5.1.7"
+  },
+  "nodemonConfig": {
+    "ext": "ts",
+    "exec": "npm run build && npm start"
   }
 }
