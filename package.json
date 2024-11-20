@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node build/server.ts",
+    "start": "node build/server.js",
     "build": "rimraf ./build && tsc",
     "dev": "nodemon server.ts",
     "start:server": "ts-node server.ts",
