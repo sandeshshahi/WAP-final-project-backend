@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "node .",
-    "build": "tsc && copyfiles ./database/schema.sql dist",
+    "build": "npx tsc && copyfiles ./database/schema.sql dist",
     "dev": "nodemon"
   },
   "keywords": [],
@@ -20,7 +20,8 @@
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.9.0",
     "copyfiles": "^2.4.1",
-    "tsx": "^4.19.2"
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
