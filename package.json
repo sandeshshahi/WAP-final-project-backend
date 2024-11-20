@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "build": "tsc",
-    "postinstall": "npm run build"
+    "start": "tsx watch server.ts"
   },
   "keywords": [],
   "author": "",
