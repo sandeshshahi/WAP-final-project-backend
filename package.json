@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "tsx watch server.ts"
+    "start": "node build/server.js",
+    "build": "tsc",
+    "dev": "nodemon server.ts",
+    "start:server": "ts-node server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
